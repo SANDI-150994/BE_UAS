@@ -285,10 +285,10 @@ const HomeScreen = () => {
                                         >{item.kegiatan}</Text>
                                         <Text
                                             style={{ size: 50, color: '#0A4D68', fontWeight: 'bold', }}
-                                        >{item.kendaraan}</Text>
+                                        >Jenis {item.kendaraan}</Text>
                                         <Text
                                             style={{ size: 50, color: '#088395', fontWeight: 'bold', }}
-                                        >{item.jumlah}</Text>
+                                        >Rp. {item.jumlah} Rbu</Text>
                                         <Text
                                             style={{ size: 50, color: '#05BFDB', fontWeight: 'bold', }}
                                         >{item.tanggal}</Text>
@@ -359,10 +359,10 @@ const HomeScreen = () => {
                                         >{item.kegiatan}</Text>
                                         <Text
                                         style={{ size: 50, color: '#0A4D68', fontWeight: 'bold', }}
-                                        >{item.kendaraan}</Text>
+                                        >Jenis {item.kendaraan}</Text>
                                         <Text
                                         style={{ size: 50, color: '#088395', fontWeight: 'bold', }}
-                                        >{item.jumlah}</Text>
+                                        >Rp {item.jumlah} Rbu</Text>
                                         <Text
                                         style={{ size: 50, color: '#05BFDB', fontWeight: 'bold', }}
                                         >{item.tanggal}</Text>
@@ -420,6 +420,21 @@ const HomeScreen = () => {
                         onPress={() => navigation.navigate('AddScreen')}
                         name="plus-circle-outline" color={'#0A4D68'} size={70} />
                 </View>
+
+                <TouchableOpacity style={{
+                            width: 300,
+                            height: 50,
+                            backgroundColor: '#9BA4B5',
+                            borderRadius: 10,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            marginTop:20,
+                            marginBottom: 20,
+                            marginHorizontal:50
+                        }} onPress={() => navigation.navigate("SplashScreen")}
+                        >
+                            <Text style={{fontWeight:'bold', color:'#0A4D68'}}>Log Out</Text>
+                        </TouchableOpacity>
             </SafeAreaView >
         </ScrollView>
     )

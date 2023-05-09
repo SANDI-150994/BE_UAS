@@ -135,16 +135,7 @@ const AddScreen = () => {
           }}
         />
 
-        <Text style={{
-          width: 300,
-          height: 50,
-          // backgroundColor: '#e0e0e0',
-          // borderRadius: 10,
-          paddingHorizontal: 20,
-          marginBottom: 20,
-          fontWeight: 'bold',
-          fontSize: 18
-        }}
+        <Text style={{ size: 25, color: '#0A4D68', fontWeight: 'bold', marginBottom: 5, marginTop:10 }}
         >Tanggal</Text>
 
         <DatePicker
