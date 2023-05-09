@@ -41,7 +41,7 @@ const EditScreen = ({ route }) => {
   const UpdateList = async (sandi) => {
     console.log('value', sandi);
     try {
-      const response = await axios.put(`http://192.168.1.37:5000/list?id=${list_id}`, {
+      const response = await axios.put(`http://192.168.45.19:5000/list?id=${list_id}`, {
         kegiatan: sandi.kegiatan,
         kendaraan: sandi.kendaraan,
         jumlah: sandi.jumlah,

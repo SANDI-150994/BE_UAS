@@ -53,7 +53,7 @@ const AddScreen = () => {
     console.log('value', value);
 
     try {
-      const response = await axios.post('http://192.168.1.37:5000/list/', {
+      const response = await axios.post('http://192.168.45.19:5000/list/', {
         nik: data.nik,
         kegiatan: value.kegiatan,
         kendaraan: value.kendaraan,

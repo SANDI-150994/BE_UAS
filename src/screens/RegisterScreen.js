@@ -17,7 +17,7 @@ const RegisterScreen = () => {
         console.log('value', value);
 
         try {
-            const response = await axios.post('http://192.168.1.37:5000/users/', {
+            const response = await axios.post('http://192.168.45.19:5000/users/', {
                 nik: value.nik,
                 nama: value.nama,
                 password: value.password

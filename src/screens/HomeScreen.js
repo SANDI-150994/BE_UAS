@@ -55,10 +55,10 @@ const HomeScreen = () => {
         console.log('value', value);
 
         try {
-            const responseAktif = await axios.post(`http://192.168.1.37:5000/list/searchAktif?nik=${data.nik}`, {
+            const responseAktif = await axios.post(`http://192.168.45.19:5000/list/searchAktif?nik=${data.nik}`, {
                 cari: value.cari,
             })
-            const responseSelesai = await axios.post(`http://192.168.1.37:5000/list/searchSelesai?nik=${data.nik}`, {
+            const responseSelesai = await axios.post(`http://192.168.45.19:5000/list/searchSelesai?nik=${data.nik}`, {
                 cari: value.cari,
             })
             if (responseAktif.data.status == 200) {
@@ -79,9 +79,9 @@ const HomeScreen = () => {
     const readData = async (value) => {
         console.log('value', value);
         try {
-            const aktif = await axios.get(`http://192.168.1.37:5000/list/aktif?nik=${value}`, {
+            const aktif = await axios.get(`http://192.168.45.19:5000/list/aktif?nik=${value}`, {
             })
-            const selesai = await axios.get(`http://192.168.1.37:5000/list/selesai?nik=${value}`, {
+            const selesai = await axios.get(`http://192.168.45.19:5000/list/selesai?nik=${value}`, {
             })
             if (aktif.data.status == 200) {
                 console.log('response', aktif.data);
@@ -103,11 +103,11 @@ const HomeScreen = () => {
         console.log('value', value);
 
         try {
-            const response = await axios.put(`http://192.168.1.37:5000/list/done?id=${value}`, {
+            const response = await axios.put(`http://192.168.45.19:5000/list/done?id=${value}`, {
             })
-            const aktif = await axios.get(`http://192.168.1.37:5000/list/aktif?nik=${data.nik}`, {
+            const aktif = await axios.get(`http://192.168.45.19:5000/list/aktif?nik=${data.nik}`, {
             })
-            const selesai = await axios.get(`http://192.168.1.37:5000/list/selesai?nik=${data.nik}`, {
+            const selesai = await axios.get(`http://192.168.45.19:5000/list/selesai?nik=${data.nik}`, {
             })
             if (response.data.status == 200) {
                 console.log('response', response.data);
@@ -127,11 +127,11 @@ const HomeScreen = () => {
         console.log('value', value);
 
         try {
-            const response = await axios.delete(`http://192.168.1.37:5000/list?id=${value}`, {
+            const response = await axios.delete(`http://192.168.45.19:5000/list?id=${value}`, {
             })
-            const aktif = await axios.get(`http://192.168.1.37:5000/list/aktif?nik=${data.nik}`, {
+            const aktif = await axios.get(`http://192.168.45.19:5000/list/aktif?nik=${data.nik}`, {
             })
-            const selesai = await axios.get(`http://192.168.1.37:5000/list/selesai?nik=${data.nik}`, {
+            const selesai = await axios.get(`http://192.168.45.19:5000/list/selesai?nik=${data.nik}`, {
             })
             if (response.data.status == 200) {
                 console.log('response', response.data);
