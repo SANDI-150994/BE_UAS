@@ -50,7 +50,7 @@ const AddScreen = () => {
 
 
   const InsertList = async (value) => {
-    // console.log('value', value);
+    console.log('value', value);
 
     try {
       const response = await axios.post('http://192.168.1.37:5000/list/', {
@@ -167,7 +167,7 @@ const AddScreen = () => {
             marginTop: 20,
           }}
 
-          onPress={async () => await InsertList({ kegiatan })}
+          onPress={async () => await InsertList({ kegiatan, kendaraan, jumlah })}
         >
           <Text style={{ fontWeight: 'bold', color: '#0A4D68' }}>Add</Text>
         </TouchableOpacity>

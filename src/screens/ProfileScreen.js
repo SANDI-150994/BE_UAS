@@ -53,7 +53,7 @@ const ProfileScreen = () => {
     const resetPassword = async (value) => {
         console.log('value', value);
         try {
-            const response = await axios.put('http://192.168.1.11:5000/users', {
+            const response = await axios.put('http://192.168.1.37:5000/users', {
                 nik: value.nik,
                 nama: value.nama,
                 password: value.passwordLama,

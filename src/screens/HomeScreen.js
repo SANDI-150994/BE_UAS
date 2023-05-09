@@ -269,7 +269,8 @@ const HomeScreen = () => {
                                         flexDirection: 'row',
                                         backgroundColor: '#e0e0e0',
                                         // alignItems:'center'
-                                    }}                                >
+                                    }}                                
+                                    >
                                     <View>
                                         <TouchableOpacity
                                             onPress={async () => await listDone(item.id)}
@@ -374,7 +375,7 @@ const HomeScreen = () => {
                                         justifyContent: 'center',
                                         alignItems: 'center',
                                         flexDirection: "row",
-                                        marginHorizontal: 80,
+                                        marginHorizontal: 100,
                                         padding:5,
                                     }}
                                     >
@@ -391,8 +392,7 @@ const HomeScreen = () => {
                                         >
                                             <Icon name="pencil" color={'grey'} size={25} />
                                         </TouchableOpacity>
-                                    </View>
-                                    <View >
+                                    
                                         <TouchableOpacity
                                             onPress={async () => await DeleteList(item.id)}
                                         >
